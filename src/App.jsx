@@ -1,4 +1,4 @@
-import { HashRouter, Routes, HashRouter, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import Landing from "./components/index"
 import Dashboard from './components/dashboard/index'
 
