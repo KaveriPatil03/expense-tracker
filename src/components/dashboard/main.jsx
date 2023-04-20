@@ -82,7 +82,7 @@ const Main = () => {
   return (
     <div>
         <div className="form form-title">
-            <h3>Hello Harish!</h3>
+            <h3>Hello User!</h3>
             <p>Take a look at your total balance</p>
             <h1>Total Balance: <span>${balance}</span></h1>
             <p>
