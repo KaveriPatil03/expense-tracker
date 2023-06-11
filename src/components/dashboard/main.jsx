@@ -81,7 +81,7 @@ const Main = () => {
 
   return (
     <div>
-        <div className="form form-title">
+        <div className="form-details form-title">
             <h3>Hello User!</h3>
             <p>Take a look at your total balance</p>
             <h1>Total Balance: <span>${balance}</span></h1>
@@ -115,9 +115,11 @@ const Main = () => {
                 <label className="label" htmlFor="Date">Date</label>
                 <input value={formData.date} onChange={(e) => setFormData({...formData, date: formatDate(e.target.value)})} className="input"type="date" placeholder="Date" id="date" />
             </div>
-            <button className='button' onClick={createTransaction}>
+           <div className="d-grid">
+           <button className='button btn btn-light' onClick={createTransaction}>
                 Create
             </button>
+           </div>
             <div className='mic'>
                 <PushToTalkButtonContainer>
                     <PushToTalkButton />

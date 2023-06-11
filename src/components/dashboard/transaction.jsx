@@ -14,14 +14,20 @@ const Transaction = () => {
       {
         transactions.map(ele => (
           <div key={ele.id} className='transactionList'>
-            <div className='transactionIcon'>
+           <div className="">
+           <div className='transactionIcon'>
               {ele.type === 'Expense' ? <GiPayMoney /> : <GiReceiveMoney /> }
             </div>
+            {/* <div className='transactionDelete ms-end'>
+              <MdDelete onClick={() => deleteTransaction(ele.id)} />
+            </div> */}
+           </div>
             <div className='transactiondetails'>
               <div className='transactionType'>
                 <h1>{ele.type}</h1>
                 <h4>{ele.category}</h4>
               </div>
+              
               <div className='transactionAmount'>
                 <h1>${ele.amount}</h1>
                 <h4>{ele.date}</h4>
